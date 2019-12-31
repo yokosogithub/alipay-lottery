@@ -13,8 +13,8 @@
 					<image class="wheel-bg-img" src="../../static/activity/draw_wheel.png" mode="aspectFit"></image>
                     <view class="prize-list">
                         <view class="prize-item" v-for="(item,index) in prizeList" :key="index">
-                            <view class="prize-pic">
-                                <img :src="item.icon">
+                            <view >
+								<image class="prize-pic" :src="item.icon" mode="aspectFit"></image>
                             </view>
                             <view class="prize-count" v-if="item.count">
                                 {{item.count}}
@@ -69,49 +69,49 @@ export default {
             did: '',
             prizeList: [
                 {
-                    icon: require('../../static/activity/bean_500.png'), // 奖品图片
+                    icon: '../../static/activity/bean_500.png', // 奖品图片
                     count: 50, // 奖品数量
                     name: 'PRA', // 奖品名称
                     isPrize: 1 // 该奖项是否为奖品
                 },
                 {
-                    icon: require('../../static/activity/bean_one.png'),
+                    icon: '../../static/activity/bean_one.png',
                     count: 15,
                     name: 'PRA',
                     isPrize: 1
                 },
                 {
-                    icon: require('../../static/activity/bean_five.png'),
+                    icon: '../../static/activity/bean_five.png',
                     count: 20,
                     name: 'PRA',
                     isPrize: 1
                 },
                 {
-                    icon: require('../../static/activity/point_five.png'),
+                    icon: '../../static/activity/point_five.png',
                     count: 5,
                     name: 'PRA',
                     isPrize: 1
                 },
                 {
-                    icon: require('../../static/activity/point_ten.png'),
+                    icon: '../../static/activity/point_ten.png',
                     count: 10,
                     name: 'PRA',
                     isPrize: 1
                 },
                 {
-                    icon: require('../../static/activity/bean_500.png'),
+                    icon: '../../static/activity/bean_500.png',
                     count: 30,
                     name: 'PRA',
                     isPrize: 1
                 },
                 {
-                    icon: require('../../static/activity/give_up.png'),
+                    icon: '../../static/activity/give_up.png',
                     count: 0,
                     name: '未中奖',
                     isPrize: 0
                 },
                 {
-                    icon: require('../../static/activity/bean_500.png'),
+                    icon: '../../static/activity/bean_500.png',
                     count: 40,
                     name: 'PRA',
                     isPrize: 1
@@ -340,9 +340,9 @@ export default {
             top: 0;
             left: 0;
             z-index: 2;
-            .prize-pic img {
+            .prize-pic{
               width: 70px;
-              height: auto;
+              height: 40px;
               margin: 10px auto 0;
             }
             &:first-child {
