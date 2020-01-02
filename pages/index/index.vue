@@ -118,7 +118,7 @@ export default {
                 }
             ], // 奖品列表
             toastControl: false, // 抽奖结果弹出框控制器
-            hasPrize: true, // 是否中奖
+            hasPrize: false, // 是否中奖
             startRotatingDegree: 0, // 初始旋转角度
             rotateAngle: 0, // 将要旋转的角度
             startRotatingDegreePointer: 0, // 指针初始旋转角度
